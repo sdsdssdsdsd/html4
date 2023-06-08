@@ -1,16 +1,522 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>내가 좋아하는 음식 레시피</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>22-23 시즌 분데스리가 최종 결과</title>
+  <style>
+    body{
+    background-image : url('https://upload.wikimedia.org/wikipedia/ko/thumb/d/df/Bundesliga_logo_%282017%29.svg/200px-Bundesliga_logo_%282017%29.svg.png');
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    .myButton {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.myButton {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+  .myButton {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+ 
+}
+.myButton {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.myButton {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+  </style>
 </head>
 <body>
-  <body bgcolor='NavajoWhite'></body>
-    <div id="header">
-    </div>
-    <div id="main">
-  <div>
-    <h1>피드백</h1>
-    <hr>
-    <h2>피드백 해주셔서 감사합니다.</h2>
-    <a href="https://yepar.github.io/html6/">첫 페이지로 돌아가기</a> 
+  <header>
+    <h1>22-23 시즌 분데스리가 최종 결과</h1>
+    <a href="C:\Users\student\Downloads\html 기말\html.html" class="myButton">프리미어리그</a>
+    <a href="C:\Users\student\Downloads\html 기말\html2.html" class="myButton">라리가</a>
+    <a href="C:\Users\student\Downloads\html 기말\html3.html" class="myButton">세리에A</a>
+    <a href="C:\Users\student\Downloads\html 기말\html5.html" class="myButton">컵 대회</a>  
+    <a href="C:\Users\student\Downloads\html 기말\html6.html" class="myButton">다음 시즌 이적 사가</a>
+  </header>
+
+  <main>
+    <h2>최종 순위</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>순위</th>
+          <th>클럽</th>
+          <th>경기</th>
+          <th>승</th>
+          <th>무</th>
+          <th>패</th>
+          <th>득점</th>
+          <th>실점</th>
+          <th>득실</th>
+          <th>승점</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>맨 시티</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>아스날</td>
+          <td>38</td>
+          <td>26</td>
+          <td>6</td>
+          <td>6</td>
+          <td>88</td>
+          <td>43</td>
+          <td>45  </td>
+          <td>84</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>맨유</td>
+          <td>38</td>
+          <td>23</td>
+          <td>6</td>
+          <td>9</td>
+          <td>58</td>
+          <td>43</td>
+          <td>15</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>뉴캐슬</td>
+          <td>38</td>
+          <td>19</td>
+          <td>14</td>
+          <td>5</td>
+          <td>68</td>
+          <td>33</td>
+          <td>35</td>
+          <td>71</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>리버풀</td>
+          <td>38</td>
+          <td>19</td>
+          <td>10</td>
+          <td>9</td>
+          <td>75</td>
+          <td>47</td>
+          <td>28</td>
+          <td>67</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>브라이턴</td>
+          <td>38</td>
+          <td>18</td>
+          <td>8</td>
+          <td>12</td>
+          <td>72</td>
+          <td>53</td>
+          <td>19</td>
+          <td>62</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>애스턴 빌라</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>토트넘</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>브렌튼퍼드</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>맨 시티</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>맨 시티</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>맨 시티</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>맨 시티</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>맨 시티</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>맨 시티</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>맨 시티</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>맨 시티</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>맨 시티</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>맨 시티</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>맨 시티</td>
+          <td>38</td>
+          <td>28</td>
+          <td>5</td>
+          <td>5</td>
+          <td>94</td>
+          <td>33</td>
+          <td>61</td>
+          <td>89</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>수상</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>상</th>
+          <th>사진</th>
+          <th>이름</th>
+         
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>프리미어리그 올해의 감독상</td>
+          <td><img src="https://i.namu.wiki/i/BuMh9njvyzXIHEJ67xktd-AzK6A5XjRhBiCzGsULiiIPYvlWLgCl8mOPVwCDdsabL-gto35rifVVMQN5B7xw4Q.webp"></td>
+          <td>펩 과르디올라</td>
+        </tr>
+        <tr>
+          <td>프리미어리그 올해의 선수상</td>
+          <td><img src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSKccXyT11zOsHEqcpC5o-U2UW7lpMymik9hZVDK2TlHMq-IEISgC4XC1F_iKYrXddJ"></td>
+          <td>엘링 홀란</td>
+        </tr>
+        <tr>
+          <td>프리미어리그 득점왕</td>
+          <td><img src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSKccXyT11zOsHEqcpC5o-U2UW7lpMymik9hZVDK2TlHMq-IEISgC4XC1F_iKYrXddJ"></td>
+          <td>엘링 홀란</td>
+        </tr>
+        <tr>
+          <td>프리미어리그 도움왕</td>
+          <td><img src="https://i.namu.wiki/i/d09qXnsgLFyS5s4fYwzY4HG0sAL-tE06og0AFRa2z80vJx_hUe38Fk9atDod7-TbPsCt15y6hB1gp88D5GjGwXc0yfcJa9GZ7Kfu2hJeQU4UZoJutyMsbRpIz1--nF2jz2ddyeDJDulTDmPel38ozQ.webp"></td>
+          <td>케빈 더브라위너</td>
+        </tr>
+ 
+      </tbody>
+    </table>
+    <h2>강등팀 및 다음 시즌 승격팀</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>강등팀</th>
+          <th>사진</th>
+          <th>승격팀</th>
+          <th>사진</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>레스터 시티</td>
+      <td><img src="https://i.namu.wiki/i/BuMh9njvyzXIHEJ67xktd-AzK6A5XjRhBiCzGsULiiIPYvlWLgCl8mOPVwCDdsabL-gto35rifVVMQN5B7xw4Q.webp"></td>
+      <td>번리</td>
+      <td><img src="https://i.namu.wiki/i/BuMh9njvyzXIHEJ67xktd-AzK6A5XjRhBiCzGsULiiIPYvlWLgCl8mOPVwCDdsabL-gto35rifVVMQN5B7xw4Q.webp"></td>
+    </tr>
+    <tr>
+      <td>리즈 유나이티드</td>
+      <td><img src="https://i.namu.wiki/i/BuMh9njvyzXIHEJ67xktd-AzK6A5XjRhBiCzGsULiiIPYvlWLgCl8mOPVwCDdsabL-gto35rifVVMQN5B7xw4Q.webp"></td>
+      <td>셰필드 유나이티드</td>
+      <td><img src="https://i.namu.wiki/i/BuMh9njvyzXIHEJ67xktd-AzK6A5XjRhBiCzGsULiiIPYvlWLgCl8mOPVwCDdsabL-gto35rifVVMQN5B7xw4Q.webp"></td>
+    </tr>
+    <tr>
+      <td>사우샘프턴</td>
+      <td><img src="https://i.namu.wiki/i/BuMh9njvyzXIHEJ67xktd-AzK6A5XjRhBiCzGsULiiIPYvlWLgCl8mOPVwCDdsabL-gto35rifVVMQN5B7xw4Q.webp"></td>
+      <td>밀월</td>
+      <td><img src="https://i.namu.wiki/i/BuMh9njvyzXIHEJ67xktd-AzK6A5XjRhBiCzGsULiiIPYvlWLgCl8mOPVwCDdsabL-gto35rifVVMQN5B7xw4Q.webp"></td>
+    </tr>
+    
+  </main>
+</body>
+</html>
